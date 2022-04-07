@@ -59,7 +59,7 @@
 
 
 
-    <script>
+    <!-- <script> 
 
         let promptNumber = prompt("What number shall we add to 7?");
         let number = parseInt(promptNumber, 10);
@@ -69,6 +69,21 @@
         }
 
         add7(number)
+    </script> -->
+
+    <script>
+        let promptA = prompt("What shall our first number be?")
+        let promptB = prompt("What shall our second number be?")
+
+        let a = parseInt(promptA, 10)
+        let b = parseInt(promptB, 10)
+
+        function multiply(a, b) {
+            alert(`Well, what do you know? ${a} times ${b} equals ${a * b}!!`)
+        }
+
+        multiply(a, b)
+
     </script>
 
 </body>
