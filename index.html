@@ -86,20 +86,41 @@
 
     </script> -->
 
-<script>
-    let phrase = prompt("What would you like me to scream?")
+    <!-- <script>
+        let phrase = prompt("What would you like me to scream?")
 
-    function capitalize(phrase){
-        if (phrase == false || phrase == null){
-            alert("Hmmm... I guess we're not in the mood for yelling today... :-(")
-        } else {
-            alert(phrase.toUpperCase()+"!!")
+        function capitalize(phrase) {
+            if (phrase == false || phrase == null) {
+                alert("Hmmm... I guess we're not in the mood for yelling today... :-(")
+            } else {
+                alert(phrase.toUpperCase() + "!!")
+            }
         }
-    }
 
-capitalize(phrase)
+        capitalize(phrase)
 
-</script>
+    </script> -->
+
+
+    <script>
+        function checkPrimesUntil(number) {
+
+            number = prompt("Pick a number")
+
+            for (let i = 2; i <= number; i++) {
+                if (i % 2 !== 0 &&
+                    i % 3 !== 0 &&
+                    i % 5 !== 0 &&
+                    i & 7 !== 0) {
+                    console.log(i);
+                } else if (i == 2){
+                    console.log(i)
+                }
+            } 
+        }
+
+        checkPrimesUntil()
+    </script>
 
 </body>
 
